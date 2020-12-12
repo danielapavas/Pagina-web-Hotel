@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Reservas</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+  <script type="text/javascript"></script>
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Cartagena-Colombia</span>
+    <span class="site-heading-lower">Reservaciones en el hotel</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Inicio
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="about.html">Acerca de</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="products.html">Sitios</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="store.html">Tarifas</a>
+          </li>
+           <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="actividades.html">Reservas</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <center><h2>Has tu reserva aquí </h2></center>
+  	<form >
+  		<div class="campos">
+	  		<label for="nombre">Nombre:</label>
+	  		<input type ="text" name="nombre" id="nombre" required/><span>*</span>
+	  		<br></br>
+	  		<label for="email">email</label>
+	  		<input type ="email" name="email" id="email" required/><span>*</span>
+  		</div>
+  		<div class="campos">
+	  		<label for="numero habitaciones">Numero habitaciones:</label>
+	  		<select name="numero habitaciones" id="numero habitaciones">
+	  			<option></option>
+	  			<option value="una">Una</option>
+	  			<option value="dos">Dos</option>
+	  			<option value="tres">Tres</option>
+	  		</select>
+  		</div>
+  		
+  		<div class="campos">
+	  		<label for="Camas por habitacion"> Camas por habitacion</label>
+	  		<select name="camas por habitacion" id="camas por haitacion">
+	  			<option></option>
+	  				<option value="una">Dos</option>
+	  				<option value="dos">Tres</option>
+	  				<option value="tres">Cuatro</option>
+	  		</select>
+  		</div>
+  		<div class="campos">
+	  		<label for="comentario">Comentario: </label>
+	  		
+	  		<textarea name="comentario" id="comentaio"></textarea>
+  		</div>
+  		<div id="botones">
+  			<input type="submit" onclick="alerta()" value="Enviar" id ="botonEnviar"/>
+  			<input type="reset" value="Limpiar Campos" id="limpiar"/>
+  		</div>
+  		<script>
+  			function alerta(){
+  				alert("Gracias por hacer tu reserva, nos estaremos comunicando contigo.")
+  			}
+  		</script>
+   	</form>
+   	
+   	 <section class="page-section about-heading">
+      <div class="container">
+        <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/vista.jpg" alt="">
+        <div class="about-heading-content">
+          <div class="row">
+            <div class="col-xl-9 col-lg-10 mx-auto">
+              <div class="bg-faded rounded p-5">
+                <p>Podras disfrutar de vistas como esta desde la altura de sus habitaciones, hacia la playa y el mar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   	
+  </body>
+  </html>
